@@ -46,6 +46,8 @@
         <li> Computers </li>
            <details><summary>Coding</summary> I really like coding. So I made this website for fun. </details>
        </ul>
+        <p>join the <b>darkside</b>...</p>
+        <a>href=https://www.tinyurl.com/darks1d3</a>
         <hr>
         <p>Contact me: <a href="mailto:sskinner1711@gmail.com">sskinner1711@gmail.com</a></p>
     </div>
