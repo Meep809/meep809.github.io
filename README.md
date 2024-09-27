@@ -7,7 +7,7 @@
         body {
             background-color: #F0F8FF;
             color: #000000;
-            font-family: "Arial", sans-serif;
+            font-family: "Segoe UI", sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
