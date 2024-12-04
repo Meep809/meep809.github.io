@@ -48,6 +48,9 @@
        </ul>
         <p>join the <b>darkside</b>...</p>
         <p><a href="https://www.tinyurl.com/darks1d3">go dark</a></p>
+        <p>My Websites</p>
+        <p><a href="https://meep809.github.io/making-a-game-using-chat-gpt/"> Car Dodging Cones (chatgpt made game)</a></p>
+         <p><a href="https://tinyurl.com/githubslope"> A Webpage for a game I made, the server is not open very often, this link might not work as a result.</a></p>
         <hr>
         <p>Contact me: <a href="mailto:sskinner1711@gmail.com">sskinner1711@gmail.com</a></p>
     </div>
