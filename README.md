@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Home Page</title>
+    <title>welcome to my website, this is my page for projects.</title>
     <style>
         body {
             background-color: #F0F8FF;
@@ -38,16 +38,15 @@
     <div class="container">
         <h1>Welcome to My Home Page!</h1>
         <hr>
-        <p>Hello! This is my personal homepage. Here, you'll find information about me, my interests, and much more.</p>
-        <p>Feel free to explore and learn more about me.</p>
+        <p>Hello! This is my personal homepage. Here, you'll find information about me, my interests, and links to my various websites.</p>
+        <p>Feel free to explore and learn more about me and my projects.</p>
         <h2> Interests </h2>
        <ul>
         <li> Technology </li>
         <li> Computers </li>
            <details><summary>Coding</summary> I really like coding. So I made this website for fun. </details>
        </ul>
-        <p>join the <b>darkside</b>...</p>
-        <p><a href="https://www.tinyurl.com/darks1d3">go dark</a></p>
+        <p>the darkside has been <b>discontinued</b>. the url is no longer functional.</p>
         <h2>My Websites</h2>
         <p><a href="https://meep809.github.io/making-a-game-using-chat-gpt/"> Car Dodging Cones (chatgpt made game)</a></p>
          <p><a href="https://tinyurl.com/githubslope"> A Webpage for a game I made, the server is not open very often, this link might not work as a result.</a></p>
