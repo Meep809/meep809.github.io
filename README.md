@@ -1,7 +1,7 @@
 <html lang="en">
     <body>
     <div class="container">
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="MPW.ico">
 <h1>Home Page</h1>
         <h2>My Projects</h2>
         <p><a href="https://meep809.github.io/making-a-game-using-chat-gpt/"> Car Dodging Cones (chatgpt made game)</a></p>
