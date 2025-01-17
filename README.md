@@ -1,8 +1,6 @@
 <html lang="en">
     <body>
     <div class="container">
-        <h1>Welcome to My Home Page!</h1>
-        <hr>
        <h2>My Websites</h2>
         <p><a href="https://meep809.github.io/making-a-game-using-chat-gpt/"> Car Dodging Cones (chatgpt made game)</a></p>
          <p><a href="https://tinyurl.com/githubslope"> A Webpage for a game I made, the server is not open very often, this link might not work as a result.</a></p>
