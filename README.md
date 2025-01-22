@@ -1,6 +1,5 @@
 <html lang="en">
     <body>
-        <link rel="shortcut icon" type="image/x-icon" href="MPW.ico">
     <div class="container">
 <h1>Home Page</h1>
         <h2>My Projects</h2>
