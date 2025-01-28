@@ -1,26 +1,31 @@
+<!DOCTYPE html>
 <html lang="en">
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
     <div class="container">
-<h1>Home Page</h1>
+        <h1>Home Page</h1>
         <h2>My Projects</h2>
-        <p><a href="https://meep809.github.io/making-a-game-using-chat-gpt/"> Car Dodging Cones (chatgpt made game)</a></p>
-         <p><a href="https://tinyurl.com/githubslope"> A Webpage for a game I made, the server is not open very often, this link might not work as a result.</a></p>
-       <p><a href="https://meep809.github.io/slopesim"> A website that you enter two slope equations, it graphs it out and tells you if the lines are parallel.</a></p>
-           <p><a href="https://meep809.github.io/inequalityslopesim"> Same website, but for graphing ineqalities.</a></p>
-               <p><a href="https://meep809.github.io/helpdesk"> Submit your IT Problems to this website.</a></p> 
+        <p><a href="https://meep809.github.io/making-a-game-using-chat-gpt/">Car Dodging Cones (chatgpt made game)</a></p>
+        <p><a href="https://tinyurl.com/githubslope">A webpage for a game I made. The server may not always be open, so this link might not work.</a></p>
+        <p><a href="https://meep809.github.io/slopesim">A website where you enter two slope equations, it graphs them and determines if they are parallel.</a></p>
+        <p><a href="https://meep809.github.io/inequalityslopesim">A similar site but for graphing inequalities.</a></p>
+        <p><a href="https://meep809.github.io/helpdesk">Submit your IT problems to this website.</a></p>
         <hr>
-         <p>Hello! This is my personal homepage. Here, you'll find information about me, my interests, and links to my various projects.</p>
-         <p>Feel free to explore and learn more about me and my projects.</p>
-       <hr>
-     <h2> Interests </h2>
+        <p>Hello! This is my personal homepage. Here, you'll find information about me, my interests, and links to my various projects.</p>
+        <p>Feel free to explore and learn more about me and my work.</p>
+        <hr>
+        <h2>Interests</h2>
         <ul>
-         <li> Technology </li>
-         <li> Computers </li>
-         <li>Coding (mainly html, and some javascript)</li>
+            <li>Technology</li>
+            <li>Computers</li>
+            <li>Coding (mainly HTML and some JavaScript)</li>
         </ul>
-    <p>the darkside has been <b>discontinued</b>. the url is no longer functional.</p>
-        </a></p>
-    <hr>
+        <p>The darkside has been <b>discontinued</b>. The URL is no longer functional.</p>
+        <hr>
         <p>Contact me: <a href="mailto:sskinner1711@gmail.com">sskinner1711@gmail.com</a></p>
     </div>
 </body>
