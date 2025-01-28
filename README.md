@@ -7,6 +7,7 @@
          <p><a href="https://tinyurl.com/githubslope"> A Webpage for a game I made, the server is not open very often, this link might not work as a result.</a></p>
        <p><a href="https://meep809.github.io/slopesim"> A website that you enter two slope equations, it graphs it out and tells you if the lines are parallel. </p>
            <p><a href="https://meep809.github.io/inequalityslopesim"> Same website, but for graphing ineqalities.</p>
+               <p><a href="https://meep809.github.io/helpdesk"> Submit your IT Problems to this website.</p>
         <hr>
          <p>Hello! This is my personal homepage. Here, you'll find information about me, my interests, and links to my various projects.</p>
          <p>Feel free to explore and learn more about me and my projects.</p>
