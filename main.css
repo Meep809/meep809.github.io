@@ -1,3 +1,24 @@
+/* Button Styles */
+button {
+    background: #00ff00;
+    color: #121212;
+    border: none;
+    padding: 15px 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: #333;
+    color: #00ff00;
+    box-shadow: 0 0 20px #00ff00;
+}
+
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
