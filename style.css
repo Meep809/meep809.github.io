@@ -5,12 +5,12 @@ body {
     color: #ddd;
     margin: 0;
     padding: 0;
-    text-align: center; /* Center all text horizontally */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
     height: 100vh; /* Full viewport height */
+    text-align: center; /* Center all text */
 }
 
 /* Menu Bar */
@@ -40,7 +40,6 @@ body {
 
 /* Heading and Paragraph Styling */
 h1, h2 {
-    text-align: center;
     color: #00ff00;
     text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00;
     margin-top: 20px; /* Add some space from the top */
