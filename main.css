@@ -26,6 +26,7 @@ body {
     padding: 8px;
     background: #121212; /* Dark background for the "time machine" feel */
     color: #ddd;
+    text-align: center;
 }
 
 /* Header Styles */
