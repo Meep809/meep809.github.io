@@ -1,107 +1,88 @@
-/* Button Styles */
-button {
-    background: #00ff00;
-    color: #121212;
-    border: none;
-    padding: 15px 30px;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 18px;
-    letter-spacing: 1px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-/* Button Hover Effect */
-button:hover {
-    background: #333;
-    color: #00ff00;
-    box-shadow: 0 0 20px #00ff00;
-}
-
-/* General Styles */
+/* General styles */
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 8px;
-    background: #121212; /* Dark background for the "time machine" feel */
+    background-color: #121212;
     color: #ddd;
-    text-align: center;
-}
-
-/* Header Styles */
-.time-machine-header {
-    background: #333;
-    padding: 20px;
-    text-align: center;
-}
-
-.time-machine-header nav ul {
-    list-style: none;
+    margin: 0;
     padding: 0;
+    text-align: center; /* Center all text */
 }
 
-.time-machine-header nav ul li {
-    display: inline-block;
-    margin-right: 30px;
+/* Menu Bar */
+.menu {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
 }
 
-.time-machine-header nav ul li a {
+.menu a {
+    color: white;
+    padding: 10px 20px;
     text-decoration: none;
-    color: #fff;
+    display: inline-block;
     font-family: 'Orbitron', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 2px;
-    text-transform: uppercase;
-    position: relative;
-    padding: 5px 0;
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease;
 }
 
-/* Hover effect for links */
-.time-machine-header nav ul li a:hover {
-    color: #00ff00;
+.menu a:hover {
+    background-color: #00ff00;
     text-shadow: 0 0 10px #00ff00;
 }
 
-/* Main Content Styles */
-.main-content {
-    padding: 50px;
+/* Heading and Paragraph Styling */
+h1, h2 {
     text-align: center;
-}
-
-.main-content h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 60px;
     color: #00ff00;
     text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00;
-    margin-bottom: 20px;
+    margin-top: 30px; /* Add some space from the top */
 }
 
-.main-content p {
-    font-size: 20px;
+p, ul {
     color: #ccc;
-    margin-top: 10px;
+    font-size: 18px;
+    text-align: center; /* Center text for paragraphs */
+    margin: 0 20px; /* Add padding to prevent text from sticking to the sides */
 }
 
-/* Footer Styles */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+/* Project Links and List */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px; /* Add space between the list and previous content */
 }
 
-/* Background Animation (Clock) */
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Link */
+a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Time Machine Effect */
 @keyframes clockMovement {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
-/* Create a clock background or animated effect */
 body::before {
     content: '';
     position: fixed;
@@ -111,7 +92,13 @@ body::before {
     height: 100%;
     background: url('clock_image.png') center center no-repeat;
     background-size: 300px;
-    opacity: 0.2;
+    opacity: 0.1;
     animation: clockMovement 120s linear infinite;
     pointer-events: none;
+}
+
+hr {
+    border: 1px solid #00ff00;
+    width: 80%;
+    margin: 20px auto;
 }
