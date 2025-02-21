@@ -5,11 +5,6 @@ body {
     color: #ddd;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    height: 100vh; /* Full viewport height */
     text-align: center; /* Center all text */
 }
 
@@ -42,14 +37,13 @@ body {
 h1, h2 {
     color: #00ff00;
     text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00;
-    margin-top: 20px; /* Add some space from the top */
+    margin-top: 20px;
 }
 
 /* Paragraphs and Project List */
 p, ul {
     color: #ccc;
     font-size: 18px;
-    text-align: center; /* Ensure the text is centered */
     margin: 10px 20px; /* Padding to prevent sticking to the sides */
 }
 
@@ -84,7 +78,13 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Time Machine Effect */
+/* Footer */
+footer {
+    margin-top: 40px;
+    color: #ccc;
+}
+
+/* Time Machine Effect (Optional) */
 @keyframes clockMovement {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
