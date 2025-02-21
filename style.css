@@ -111,7 +111,6 @@ hr {
     width: 40px;
     text-align: center;
     display: inline-block;
-    animation: flip 1s ease-in-out infinite;
 }
 
 /* Animation for the clock */
