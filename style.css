@@ -112,7 +112,6 @@ hr {
     text-align: center;
     display: inline-block;
     position: relative;
-    overflow: hidden;
 }
 
 /* The actual flipping effect for digits */
