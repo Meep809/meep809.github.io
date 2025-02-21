@@ -5,19 +5,61 @@ function formatTimeUnit(unit) {
 
 // Function to update the clock every second
 function updateClock() {
-    const now = new Date();
-    const hours = formatTimeUnit(now.getUTCHours());
-    const minutes = formatTimeUnit(now.getUTCMinutes());
-    const seconds = formatTimeUnit(now.getUTCSeconds());
+    const nowUTC = new Date();
+    const nowLocal = new Date();
 
-    // Update the time in the footer
-    document.getElementById('hour').innerText = hours;
-    document.getElementById('minute').innerText = minutes;
-    document.getElementById('second').innerText = seconds;
+    // Get UTC time
+    const utcHours = formatTimeUnit(nowUTC.getUTCHours());
+    const utcMinutes = formatTimeUnit(nowUTC.getUTCMinutes());
+    const utcSeconds = formatTimeUnit(nowUTC.getUTCSeconds());
+
+    // Get Local time
+    const localHours = formatTimeUnit(nowLocal.getHours());
+    const localMinutes = formatTimeUnit(nowLocal.getMinutes());
+    const localSeconds = formatTimeUnit(nowLocal.getSeconds());
+
+    // Update both UTC and Local clocks
+    updateDigit('utc-hour', utcHours);
+    updateDigit('utc-minute', utcMinutes);
+    updateDigit('utc-second', utcSeconds);
+
+    updateDigit('local-hour', localHours);
+    updateDigit('local-minute', localMinutes);
+    updateDigit('local-second', localSeconds);
 }
 
-// Update the clock every second
+// Function to update a digit (flipping animation)
+function updateDigit(id, newTimeUnit) {
+    const digitElement = document.getElementById(id);
+    const currentUnit = digitElement.innerText;
+
+    if (currentUnit !== newTimeUnit) {
+        const topSpan = document.createElement('span');
+        const bottomSpan = document.createElement('span');
+
+        topSpan.className = 'top';
+        bottomSpan.className = 'bottom';
+
+        topSpan.innerText = currentUnit;
+        bottomSpan.innerText = newTimeUnit;
+
+        digitElement.innerHTML = ''; // Clear previous content
+        digitElement.appendChild(topSpan);
+        digitElement.appendChild(bottomSpan);
+
+        // Trigger flip animation
+        setTimeout(() => {
+            digitElement.classList.add('flip');
+        }, 100); // Delay the class addition to allow animation to trigger
+
+        setTimeout(() => {
+            digitElement.classList.remove('flip');
+        }, 400); // Remove flip class after animation is complete
+    }
+}
+
+// Update the clocks every second
 setInterval(updateClock, 1000);
 
-// Initialize the clock immediately
+// Initialize the clocks immediately
 updateClock();
