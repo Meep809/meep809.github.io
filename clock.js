@@ -28,6 +28,30 @@ function updateClock() {
     updateDigit('local-second', localSeconds);
 }
 
+// Function to initialize clocks with default values
+function initializeClock() {
+    // Set initial values for both UTC and Local clocks
+    const nowUTC = new Date();
+    const nowLocal = new Date();
+
+    const utcHours = formatTimeUnit(nowUTC.getUTCHours());
+    const utcMinutes = formatTimeUnit(nowUTC.getUTCMinutes());
+    const utcSeconds = formatTimeUnit(nowUTC.getUTCSeconds());
+
+    const localHours = formatTimeUnit(nowLocal.getHours());
+    const localMinutes = formatTimeUnit(nowLocal.getMinutes());
+    const localSeconds = formatTimeUnit(nowLocal.getSeconds());
+
+    // Set initial values for each clock
+    document.getElementById('utc-hour').innerText = utcHours;
+    document.getElementById('utc-minute').innerText = utcMinutes;
+    document.getElementById('utc-second').innerText = utcSeconds;
+
+    document.getElementById('local-hour').innerText = localHours;
+    document.getElementById('local-minute').innerText = localMinutes;
+    document.getElementById('local-second').innerText = localSeconds;
+}
+
 // Function to update a digit (flipping animation)
 function updateDigit(id, newTimeUnit) {
     const digitElement = document.getElementById(id);
@@ -61,5 +85,5 @@ function updateDigit(id, newTimeUnit) {
 // Update the clocks every second
 setInterval(updateClock, 1000);
 
-// Initialize the clocks immediately
-updateClock();
+// Initialize clocks immediately on page load
+initializeClock();
