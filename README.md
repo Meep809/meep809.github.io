@@ -1,3 +1,4 @@
+<div id="clock"></div>
 <!DOCTYPE html>
 <html lang="en">
 <head>
