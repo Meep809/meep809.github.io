@@ -82,30 +82,47 @@ a:hover {
 footer {
     margin-top: 40px;
     color: #ccc;
-}
-
-/* Time Machine Effect (Optional) */
-@keyframes clockMovement {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('clock_image.png') center center no-repeat;
-    background-size: 300px;
-    opacity: 0.1;
-    animation: clockMovement 120s linear infinite;
-    pointer-events: none;
+    font-size: 18px;
 }
 
 hr {
     border: 1px solid #00ff00;
     width: 80%;
     margin: 20px auto;
+}
+
+/* Flip clock styles */
+.flip-clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.digit {
+    background-color: #333;
+    color: #00ff00;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ff00;
+    width: 40px;
+    text-align: center;
+    display: inline-block;
+    animation: flip 1s ease-in-out infinite;
+}
+
+/* Animation for the clock */
+@keyframes flip {
+    0% {
+        transform: rotateX(0deg);
+    }
+    50% {
+        transform: rotateX(180deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
 }
