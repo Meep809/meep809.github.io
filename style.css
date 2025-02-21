@@ -5,14 +5,21 @@ body {
     color: #ddd;
     margin: 0;
     padding: 0;
-    text-align: center; /* Center all text */
+    text-align: center; /* Center all text horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
 }
 
 /* Menu Bar */
 .menu {
     background-color: #333;
     padding: 10px;
-    text-align: center;
+    width: 100%; /* Make the menu full width */
+    display: flex;
+    justify-content: center; /* Center menu items */
 }
 
 .menu a {
@@ -36,21 +43,22 @@ h1, h2 {
     text-align: center;
     color: #00ff00;
     text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00;
-    margin-top: 30px; /* Add some space from the top */
+    margin-top: 20px; /* Add some space from the top */
 }
 
+/* Paragraphs and Project List */
 p, ul {
     color: #ccc;
     font-size: 18px;
-    text-align: center; /* Center text for paragraphs */
-    margin: 0 20px; /* Add padding to prevent text from sticking to the sides */
+    text-align: center; /* Ensure the text is centered */
+    margin: 10px 20px; /* Padding to prevent sticking to the sides */
 }
 
 /* Project Links and List */
 ul {
     list-style-type: none;
     padding: 0;
-    margin-top: 20px; /* Add space between the list and previous content */
+    margin-top: 20px;
 }
 
 ul li {
