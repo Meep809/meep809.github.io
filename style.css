@@ -111,4 +111,26 @@ hr {
     width: 40px;
     text-align: center;
     display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+/* The actual flipping effect for digits */
+.digit span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.digit.flip span {
+    transform: translateY(-100%);
+}
+
+.digit.flip span.top {
+    transform: translateY(0);
+}
+
+.digit.flip span.bottom {
+    transform: translateY(100%);
 }
