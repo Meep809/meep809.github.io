@@ -37,19 +37,20 @@
     <p>Contact me: <a href="mailto:sskinner1711@gmail.com">sskinner1711@gmail.com</a></p>
 
     <!-- Footer -->
-    <footer>
-        <div id="utc-clock" class="flip-clock">
-            <div class="digit" id="utc-hour">00</div><h2>:</h2><div class="digit" id="utc-minute">00</div><h2>:</h2><div class="digit" id="utc-second">00</div>
-        </div>
-        <p>UTC Time</p>
+   <div class="footer-clocks">
+    <!-- UTC Clock (Left Side) -->
+    <div class="clock-container">
+        <p class="clock-label">UTC Time:</p>
+        <div class="digit" id="utc-hour">00</div><h2>:</h2><div class="digit" id="utc-minute">00</div><h2>:</h2><div class="digit" id="utc-second">00</div>
+    </div>
 
-        <div id="local-clock" class="flip-clock">
-            <div class="digit" id="local-hour">00</div><h2>:</h2><div class="digit" id="local-minute">00</div><h2>:</h2><div class="digit" id="local-second">00</div><div class="digit ampm" id="local-ampm">AM</div> <!-- Added AM/PM -->
-        </div>
-        <p>Local Time</p>
+    <!-- Local Clock (Right Side) -->
+    <div class="clock-container">
+        <p class="clock-label">Local Time:</p>
+        <div class="digit" id="local-hour">00</div><h2>:</h2><div class="digit" id="local-minute">00</div><h2>:</h2><div class="digit" id="local-second">00</div><div class="digit ampm" id="local-ampm">AM</div>
+    </div>
+</div>
 
-        <p>&copy; 2025 Meep809. All rights reserved.</p>
-    </footer>
 
     <!-- ✅ Move JavaScript here so it runs after the page loads -->
     <script src="clock.js"></script>
