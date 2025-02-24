@@ -1,27 +1,35 @@
-function updateClock() {
-    const nowUTC = new Date();
-    const nowLocal = new Date();
+document.addEventListener("DOMContentLoaded", function () {
+    function formatTimeUnit(unit) {
+        return unit < 10 ? '0' + unit : unit; // Ensures double digits
+    }
 
-    // Get UTC time
-    const utcHours = formatTimeUnit(nowUTC.getUTCHours());
-    const utcMinutes = formatTimeUnit(nowUTC.getUTCMinutes());
-    const utcSeconds = formatTimeUnit(nowUTC.getUTCSeconds());
+    function updateClock() {
+        const nowUTC = new Date();
+        const nowLocal = new Date();
 
-    // Get Local time
-    const localHours = formatTimeUnit(nowLocal.getHours());
-    const localMinutes = formatTimeUnit(nowLocal.getMinutes());
-    const localSeconds = formatTimeUnit(nowLocal.getSeconds());
+        // Get formatted time
+        const utcHours = formatTimeUnit(nowUTC.getUTCHours());
+        const utcMinutes = formatTimeUnit(nowUTC.getUTCMinutes());
+        const utcSeconds = formatTimeUnit(nowUTC.getUTCSeconds());
 
-    // Use alerts to debug
-    alert(`UTC Time: ${utcHours}:${utcMinutes}:${utcSeconds}`);
-    alert(`Local Time: ${localHours}:${localMinutes}:${localSeconds}`);
+        const localHours = formatTimeUnit(nowLocal.getHours());
+        const localMinutes = formatTimeUnit(nowLocal.getMinutes());
+        const localSeconds = formatTimeUnit(nowLocal.getSeconds());
 
-    // Update both UTC and Local clocks
-    updateDigit('utc-hour', utcHours);
-    updateDigit('utc-minute', utcMinutes);
-    updateDigit('utc-second', utcSeconds);
+        // Check if elements exist before updating
+        if (document.getElementById('utc-hour')) {
+            document.getElementById('utc-hour').innerText = utcHours;
+            document.getElementById('utc-minute').innerText = utcMinutes;
+            document.getElementById('utc-second').innerText = utcSeconds;
+        }
 
-    updateDigit('local-hour', localHours);
-    updateDigit('local-minute', localMinutes);
-    updateDigit('local-second', localSeconds);
-}
+        if (document.getElementById('local-hour')) {
+            document.getElementById('local-hour').innerText = localHours;
+            document.getElementById('local-minute').innerText = localMinutes;
+            document.getElementById('local-second').innerText = localSeconds;
+        }
+    }
+
+    updateClock(); // Initialize immediately
+    setInterval(updateClock, 1000); // Update every second
+});
