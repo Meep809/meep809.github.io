@@ -16,14 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
         const localMinutes = formatTimeUnit(nowLocal.getMinutes());
         const localSeconds = formatTimeUnit(nowLocal.getSeconds());
 
-        // Check if elements exist before updating
-        if (document.getElementById('utc-hour')) {
+        // ✅ Ensure the elements exist before trying to update them
+        if (document.getElementById('utc-hour') !== null) {
             document.getElementById('utc-hour').innerText = utcHours;
             document.getElementById('utc-minute').innerText = utcMinutes;
             document.getElementById('utc-second').innerText = utcSeconds;
         }
 
-        if (document.getElementById('local-hour')) {
+        if (document.getElementById('local-hour') !== null) {
             document.getElementById('local-hour').innerText = localHours;
             document.getElementById('local-minute').innerText = localMinutes;
             document.getElementById('local-second').innerText = localSeconds;
