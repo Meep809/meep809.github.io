@@ -130,6 +130,45 @@ hr {
     transform: translateY(0);
 }
 
+/* Footer clock container */
+.footer-clocks {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Align clocks to opposite sides */
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white;
+}
+
+/* Individual clock styles */
+.clock-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* UTC and local time styles */
+.digit {
+    width: 40px;
+    height: 50px;
+    background: black;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+/* Text above clocks */
+.clock-label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+
 .digit.flip span.bottom {
     transform: translateY(100%);
 }
