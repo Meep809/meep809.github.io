@@ -3,72 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Clock Wall</title>
-    <style>
-        body {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 20px;
-            justify-content: center;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        .clock-container {
-            text-align: center;
-        }
-        .clock {
-            width: 150px;
-            height: 150px;
-            border: 5px solid black;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-            background: white;
-            position: relative;
-        }
-        .label {
-            margin-top: 10px;
-            font-size: 14px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            width: 150px;
-        }
-    </style>
+    <title>Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"> <!-- Link to your CSS -->
 </head>
 <body>
-    <script>
-        const timeZones = Intl.supportedValuesOf('timeZone').map(zone => ({ city: zone.split('/').pop().replace(/_/g, ' '), zone }));
-        
-        function createClock(city, timeZone) {
-            const container = document.createElement("div");
-            container.className = "clock-container";
-            
-            const clock = document.createElement("div");
-            clock.className = "clock";
-            
-            const label = document.createElement("div");
-            label.className = "label";
-            label.textContent = `${city} (${timeZone.split('/')[0]})`;
-            
-            container.appendChild(clock);
-            container.appendChild(label);
-            document.body.appendChild(container);
-            
-            function updateClock() {
-                const now = new Date();
-                const options = { timeZone, hour: '2-digit', minute: '2-digit', second: '2-digit' };
-                clock.textContent = new Intl.DateTimeFormat('en-US', options).format(now);
-            }
-            
-            updateClock();
-            setInterval(updateClock, 1000);
-        }
-        
-        timeZones.forEach(({ city, zone }) => createClock(city, zone));
-    </script>
+    <!-- Menu Bar -->
+    <div class="menu">
+        <a href="https://meep809.github.io/making-a-game-using-chat-gpt/">Car Dodging Cones</a>
+        <a href="https://meep809.github.io/cashlet">Cashlet</a>
+        <a href="https://meep809.github.io/slopesim">Slope Graphing</a>
+        <a href="https://meep809.github.io/inequalityslopesim">Inequality Graphing</a>
+        <a href="https://meep809.github.io/helpdesk">Help Desk</a>
+    </div>
+    
+    <!-- Main Content -->
+    <h1>Welcome to My Homepage</h1>
+    <p>Hello! This is my personal homepage. Here, you'll find information about me, my interests, and links to my various projects.</p>
+    
+    <hr>
+    
+    <h1><a href="https://github.com/Meep809">About me (GitHub Profile)</a></h1>
+
+    <hr>
+    
+    <h2>Interests</h2>
+    <ul>
+        <li>Technology</li>
+        <li>Computers</li>
+        <li>Coding (mainly HTML and some JavaScript)</li>
+    </ul>
+    
+    <p>The darkside has been <b>discontinued</b>. The URL is no longer functional.</p>
+    
+    <hr>
+    
+    <p>Contact me: <a href="mailto:sskinner1711@gmail.com">sskinner1711@gmail.com</a> OR <a href="mailto:sam.skinner@wca-hsv.org">sam.skinner@wca-hsv.org</a></p>
+
+    <!-- Footer -->
+   <div class="footer-clocks">
+    <!-- UTC Clock (Left Side) -->
+    <div class="clock-container">
+        <p class="clock-label">UTC Time:</p>
+        <div class="digit" id="utc-hour">00</div><h2>:</h2><div class="digit" id="utc-minute">00</div><h2>:</h2><div class="digit" id="utc-second">00</div>
+    </div>
+
+    <!-- Local Clock (Right Side) -->
+    <div class="clock-container">
+        <p class="clock-label">Local Time:</p>
+        <div class="digit" id="local-hour">00</div><h2>:</h2><div class="digit" id="local-minute">00</div><h2>:</h2><div class="digit" id="local-second">00</div><div class="digit ampm" id="local-ampm">AM</div>
+    </div>
+       <p>&copy; 2025 Meep809. All Rights Reserved.</p>
+</div>
+
+
+    <!-- ✅ Move JavaScript here so it runs after the page loads -->
+    <script src="clock.js"></script>
 </body>
 </html>
