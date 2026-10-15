@@ -48,9 +48,9 @@ a:hover { color: #ec168b; text-decoration: underline; }
 }
 .logo-mark {
   position: relative;
-  flex: 0 0 68px;
-  width: 68px;
-  height: 68px;
+  flex: 0 0 136px;
+  width: 136px;
+  height: 136px;
   display: grid;
   place-items: center;
   overflow: hidden;
