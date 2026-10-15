@@ -1,93 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet"> <!-- Link to your CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0878c9">
+  <title>Meep809's Homepage</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-    <script>
-const button = document.getElementById("themeToggle");
-
-// Load saved theme
-if(localStorage.getItem("theme") === "dark"){
-    document.body.classList.add("dark");
-    button.textContent = "☀️ Light Mode";
-}
-
-button.addEventListener("click", () => {
-
-    document.body.classList.toggle("dark");
-
-    if(document.body.classList.contains("dark")){
-        localStorage.setItem("theme","dark");
-        button.textContent = "☀️ Light Mode";
-    }else{
-        localStorage.setItem("theme","light");
-        button.textContent = "🌙 Dark Mode";
-    }
-
-});
-</script>
 <body>
-    <!-- Menu Bar -->
-    <div class="menu">
-        <a href="https://meep809.github.io/wallofclocks/">Wall of Clocks</a>
-        <a href="https://meep809.github.io/blkblst">Blockblast</a>
-        <a href="https://meep809.github.io/infinity">Infinity (UG)</a>
-        <a href="https://meep809.github.io/inequalityslopesim">Inequality Graphing</a>
-        <a href="https://meep809.github.io/umbrion">Umbrion</a>
-        <a href="https://meep809.github.io/eagchoose">Eaglercraft</a>
+  <div class="top-strip">
+    <span>MEep809.GITHUB.IO</span>
+    <span class="top-strip-right">WELCOME TO MY CORNER OF THE WEB!</span>
+  </div>
+
+  <header class="site-header">
+    <div class="logo-mark" aria-hidden="true">M!</div>
+    <div class="header-copy">
+      <div class="eyebrow">THE OFFICIAL HOMEPAGE OF</div>
+      <div class="site-title">Meep809</div>
+      <div class="tagline">Projects, links, computers &amp; other stuff</div>
     </div>
-    
-    <!-- Main Content -->
-    <h1>Welcome to My Homepage</h1>
-    <p>Hello! This is my personal homepage. Here, you'll find information about me, my interests, and links to my various projects.</p>
-    
-    <hr>
-    
-    <h1><a href="https://meep809.github.io/Meep809">About me</a></h1>
-    <h1><a href="https://meep809.github.io/links">Useful Links</a></h1>
+    <div class="header-sparkle" aria-hidden="true">✦</div>
+  </header>
 
-    <hr>
-    
-    <h2>Interests</h2>
-    <ul>
-        <li>Technology</li>
-        <li>Computers</li>
-        <li>Coding (mainly HTML and some JavaScript)</li>
-    </ul>
+  <nav class="menu" aria-label="Main navigation">
+    <a href="https://meep809.github.io/wallofclocks/">Wall of Clocks</a>
+    <a href="https://meep809.github.io/blkblst">Blockblast</a>
+    <a href="https://meep809.github.io/infinity">Infinity (UG)</a>
+    <a href="https://meep809.github.io/inequalityslopesim">Inequality Graphing</a>
+    <a href="https://meep809.github.io/umbrion">Umbrion</a>
+    <a href="https://meep809.github.io/eagchoose">Eaglercraft</a>
+  </nav>
 
-     <a href='https://free-hit-counters.net/'>https://free-hit-counters.net/</a> 
-    <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=fe534e251a7931f16c30aadd85f876ec1d46e7df'></script>
-    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1488066/t/6"></script>
-    
-    <hr>
-    
-    <p>Contact me by opening an issue on the issues page on this <a href="https://github.com/Meep809/meep809.github.io/issues">repository.</a></p>
+  <main class="page-layout">
+    <aside class="sidebar">
+      <div class="sidebar-title">SITE MENU</div>
+      <a href="https://meep809.github.io/Meep809">» About Me</a>
+      <a href="https://meep809.github.io/links">» Useful Links</a>
+      <div class="sidebar-divider"></div>
+      <div class="mini-badge">★ WEB ZONE ★</div>
+      <p class="sidebar-note">Thanks for stopping by!</p>
+      <div class="status-box"><span class="status-light"></span> SITE STATUS: ONLINE</div>
+    </aside>
 
-    <!-- Footer -->
-   <div class="footer-clocks">
-    <!-- UTC Clock (Left Side) -->
+    <section class="main-panel">
+      <div class="panel-heading"><span>★</span> Welcome to My Homepage <span class="heading-end">★</span></div>
+      <div class="panel-content">
+        <h1>Hey there, internet!</h1>
+        <p>Hello! This is my personal homepage. Here, you'll find information about me, my interests, and links to my various projects.</p>
+
+        <div class="feature-links">
+          <a class="feature-button" href="https://meep809.github.io/Meep809"><span class="feature-icon">☺</span><span><strong>About Me</strong><small>Get to know the person behind the page</small></span><b>›</b></a>
+          <a class="feature-button" href="https://meep809.github.io/links"><span class="feature-icon">↗</span><span><strong>Useful Links</strong><small>Handy sites and resources</small></span><b>›</b></a>
+        </div>
+
+        <h2 class="section-heading">Things I'm interested in</h2>
+        <ul class="interest-list">
+          <li>Technology</li>
+          <li>Computers</li>
+          <li>Coding (mainly HTML and some JavaScript)</li>
+        </ul>
+
+        <div class="visitor-panel">
+          <div class="visitor-title">YOU ARE VISITOR #</div>
+          <a href="https://free-hit-counters.net/">free-hit-counters.net</a>
+          <script type="text/javascript" src="https://www.freevisitorcounters.com/auth.php?id=fe534e251a7931f16c30aadd85f876ec1d46e7df"></script>
+          <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1488066/t/6"></script>
+        </div>
+
+        <p class="contact-line">Got a question? Contact me by opening an issue on the <a href="https://github.com/Meep809/meep809.github.io/issues">repository issues page</a>.</p>
+      </div>
+      <div class="panel-bottom">THANKS FOR VISITING • LAST UPDATED: 2026</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Meep809. All Rights Reserved.</p>
+    <img src="erified.png" alt="meep809.github.io is verified to not have cookies or trackers." width="119" height="70">
+    <button id="themeToggle" type="button">Switch to Dark Mode</button>
+  </footer>
+
+  <div class="footer-clocks" aria-label="Live clocks">
     <div class="clock-container">
-        <p class="clock-label">UTC Time:</p>
-        <div class="digit" id="utc-hour">00</div><h2>:</h2><div class="digit" id="utc-minute">00</div><h2>:</h2><div class="digit" id="utc-second">00</div>
+      <p class="clock-label">UTC TIME</p>
+      <div class="digit" id="utc-hour">00</div><span class="clock-colon">:</span><div class="digit" id="utc-minute">00</div><span class="clock-colon">:</span><div class="digit" id="utc-second">00</div>
     </div>
-
-    <!-- Local Clock (Right Side) -->
-    <div class="clock-container">
-        <p class="clock-label">Local Time:</p>
-        <div class="digit" id="local-hour">00</div><h2>:</h2><div class="digit" id="local-minute">00</div><h2>:</h2><div class="digit" id="local-second">00</div><div class="digit ampm" id="local-ampm">AM</div>
+    <div class="clock-container local-clock">
+      <p class="clock-label">LOCAL TIME</p>
+      <div class="digit" id="local-hour">00</div><span class="clock-colon">:</span><div class="digit" id="local-minute">00</div><span class="clock-colon">:</span><div class="digit" id="local-second">00</div><div class="digit ampm" id="local-ampm">AM</div>
     </div>
-       <p>&copy; 2026 Meep809. All Rights Reserved.</p>
-       <img src="erified.png" alt="meep809.github.io is verified to not have cookies or trackers." width="119" height="70"> 
-       <button id="themeToggle">🌙 Dark Mode</button>
-</div>
+  </div>
 
-
-    <!-- ✅ Move JavaScript here so it runs after the page loads -->
-    <script src="clock.js"></script>
+  <script>
+    const themeToggle = document.getElementById("themeToggle");
+    function setTheme(isDark) {
+      document.body.classList.toggle("dark", isDark);
+      themeToggle.textContent = isDark ? "Switch to Light Mode" : "Switch to Dark Mode";
+      try { localStorage.setItem("theme", isDark ? "dark" : "light"); } catch (e) {}
+    }
+    let savedTheme = "light";
+    try { savedTheme = localStorage.getItem("theme") || "light"; } catch (e) {}
+    setTheme(savedTheme === "dark");
+    themeToggle.addEventListener("click", () => setTheme(!document.body.classList.contains("dark")));
+  </script>
+  <script src="clock.js"></script>
 </body>
 </html>
